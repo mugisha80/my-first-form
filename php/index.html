@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Form</title>
+    <style>
+        body { font-family: Arial; margin: 50px; background: #f0f0f0; }
+        form { background: white; padding: 20px; border-radius: 5px; width: 250px; }
+        input { width: 90%; margin-bottom: 15px; padding: 8px; display: block; }
+        button { background: green; color: white; padding: 10px; border: none; width: 100%; }
+    </style>
+</head>
+<body>
+
+    <form>
+        <label>First Name:</label>
+        <input type="text" required>
+
+        <label>Last Name:</label>
+        <input type="text" required>
+
+        <label>Age:</label>
+        <!-- max="140" stops the input from going higher than 140 -->
+        <input type="number" min="1" max="140" required>
+
+        <button type="submit">Send</button>
+    </form>
+
+</body>
+</html>
